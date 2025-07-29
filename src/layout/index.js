@@ -4,7 +4,7 @@ import Footer from "@/components/ui/footer";
 
 export default function Layout({
   children,
-  title = "Pepscode Technology - Security Solutions",
+  title = "Pescode Technology - Security Solutions",
 }) {
   return (
     <div className="min-h-screen flex flex-col">

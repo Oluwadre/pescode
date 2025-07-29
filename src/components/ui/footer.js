@@ -1,12 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "@/assets/images/pep.png";
 
-const Footer =() => {
+const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Pepscode Technology</h3>
+            <div className="w-[150px]">
+              <Link href="/">
+                <Image src={Logo} alt="logo" />
+              </Link>
+            </div>
+
             <p className="mb-4">
               Advanced security solutions for homes and businesses.
             </p>
@@ -88,13 +95,13 @@ const Footer =() => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="hover:text-blue-400">
-                  About Us
+                <Link href="/about_us" className="hover:text-blue-400">
+                  About
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Our Team
+                <Link href="contact" className="hover:text-blue-400">
+                  Contact Us
                 </Link>
               </li>
               <li>
@@ -120,7 +127,7 @@ const Footer =() => {
               <p className="mb-2">123 Security Ave</p>
               <p className="mb-2">Tech City, TC 10001</p>
               <p className="mb-2">Phone: (123) 456-7890</p>
-              <p className="mb-4">Email: info@pepscode.tech</p>
+              <p className="mb-4">Email: info@Pescode.tech</p>
             </address>
             <Link href="/faq" className="text-blue-400 hover:underline">
               FAQ & Support
@@ -129,13 +136,13 @@ const Footer =() => {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} Pepscode Technology. All rights
+            &copy; {new Date().getFullYear()} Pescode Technology. All rights
             reserved.
           </p>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -6,19 +6,19 @@ export default function TeamSection() {
       name: "Ibile United",
       role: "CEO & Founder",
       bio: "With 15+ years in security technology, John leads our vision and strategy.",
-    //   image: "/images/team-john.jpg",
+      //   image: "/images/team-john.jpg",
     },
     {
       name: "Baylis stitches",
       role: "Technical Director",
       bio: "Baylis oversees all technical implementations and system designs.",
-    //   image: "/images/team-sarah.jpg",
+      //   image: "/images/team-sarah.jpg",
     },
     {
       name: "ElDrebanks",
       role: "Operations Manager",
       bio: "Michael ensures our installations meet the highest quality standards.",
-    //   image: "/images/team-michael.jpg",
+      //   image: "/images/team-michael.jpg",
     },
   ];
 
@@ -28,7 +28,7 @@ export default function TeamSection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Team</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Meet the dedicated professionals behind Pepscode Technology
+            Meet the dedicated professionals behind Pescode Technology
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function TeamSection() {
             >
               <div className="relative h-64">
                 <Image
-                //   src={member.image}
+                  //   src={member.image}
                   alt={member.name}
                   fill
                   className="object-cover"

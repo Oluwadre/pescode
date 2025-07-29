@@ -50,7 +50,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="rounded-xl max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="rounded-xl max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <h3 className="text-2xl text-center font-bold mb-6">Contact Us</h3>
 
       {submitStatus && (
@@ -158,11 +158,11 @@ export default function ContactForm() {
           />
         </div>
 
-        <div>
+        <div className="flex justify-center">
           <button
             type="submit"
             disabled={isSubmitting}
-            className="btn-primary w-full"
+            className="bg-[#00abe4] w-[250px] p-4 font-bold text-white rounded-[10px]"
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>

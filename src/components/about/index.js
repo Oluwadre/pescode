@@ -1,21 +1,21 @@
 import React from 'react'
 import Image from "next/image"
+import Ibile from "@/assets/images/ibile.jpg"
 
 const Index = () => {
   return (
     <div>
-      <section className="py-16 bg-white" id="about">
+      <section className="py-16 bg-white" id="about_us">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-            {/* Image Column */}
-            <div className="mb-12 lg:mb-0">
-              <div className="relative h-80 sm:h-96 lg:h-full rounded-xl overflow-hidden shadow-xl">
+            <div className="mb-12">
+              <div className="lg:h-full rounded-xl  shadow-xl">
                 <Image
-                  //   src="/images/about-team.jpg"
-                  alt="Pepscode Technology Team"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  src={Ibile}
+                  alt="Pescode Technology Team"
+                  //   fill
+                  //   className="object-cover"
+                  // sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -23,7 +23,7 @@ const Index = () => {
             {/* Content Column */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                About <span className="text-blue-600">Pepscode Technology</span>
+                About <span className="text-blue-600">Pescode Technology</span>
               </h2>
 
               <div className="prose prose-lg text-gray-600 mb-8">
@@ -78,6 +78,18 @@ const Index = () => {
                   delivering service excellence. To comply with stipulations of
                   quality management system and to continually improve its
                   effectiveness.
+                </p>
+              </div>
+              <div className="bg-blue-50 p-6 rounded-lg border border-blue-100 mb-8">
+                <h3 className="text-xl font-bold text-blue-800 mb-3">
+                  Our Edge
+                </h3>
+                <p className="text-blue-700">
+                  OUR Edge Seamless execution of projects. Deep industry
+                  expertise Broad and evolving service offerings, including
+                  transformational outsourcing Enduring relationships with the
+                  world leading corporations and government Technology
+                  Driven by innovation.
                 </p>
               </div>
 
